@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../tabletask"
+	},
+	{
+		"path": "../formtask"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "formtask"
+  }
+}

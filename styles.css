@@ -1,15 +1,350 @@
 @font-face {
-    font-family: signup;
-    src: url(PrettyGoodDemo-K72jD.ttf);
-}
-
-@font-face {
-    font-family: form;
-    src: url(RocketchickenRegular-qZ6EV.otf);
-}
-
-
-@font-face {
-    font-family: wat;
+    font-family: mm;
     src: url(WinterPrincess-EaZv4.ttf);
+}
+
+
+
+
+
+
+
+body {
+
+    margin: 0 auto;
+    background-color: rgb(65, 65, 65);
+    height: 700px;
+    width: 1400px;
+
+
+
+
+
+}
+
+.wallpaper {
+    height: 700px;
+    width: 1400px;
+    background-image: url(278591.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+    border: double 5px black;
+    border-radius: 2%;
+
+
+
+}
+
+
+.container {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -500px 10px 10px 200px;
+    position: absolute;
+}
+
+
+
+header {
+
+    background-color: rgb(84, 0, 0);
+
+    height: 100px;
+
+
+    animation: slidein 4s linear;
+
+}
+
+
+@keyframes slidein {
+    0% {
+        margin-left: 50%;
+
+    }
+
+    0% {
+        margin-right: 50%;
+
+    }
+}
+
+
+
+
+.text {
+    text-align: center;
+    font-family: mm;
+
+
+    color: rgb(0, 0, 0);
+    animation: changetext 8s forwards;
+}
+
+
+
+@keyframes changetext {
+
+    0% {
+        color: black;
+        text-shadow: rgb(83, 83, 83) 0px 0px 27px;
+        opacity: 0;
+        letter-spacing: -7px;
+        scale: 10%;
+    }
+
+    20% {
+        color: rgb(116, 0, 0);
+        scale: 40%;
+        letter-spacing: -5px;
+        text-shadow: rgb(29, 29, 29) 0px 0px 27px;
+    }
+
+    100% {
+        letter-spacing: -1px;
+        font-size: xx-large;
+        scale: 170%;
+        color: rgb(189, 4, 4);
+        text-shadow: rgb(0, 0, 0) 1px 1px 27px;
+
+
+    }
+}
+
+
+
+.over {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15%;
+
+
+
+}
+
+.burrow {
+
+    font-size: 50px;
+    color: rgb(96, 0, 0);
+    font-family: mm;
+
+
+}
+
+
+h3 {
+
+
+
+    font-size: 50px;
+    color: rgb(96, 0, 0);
+    font-family: mm;
+
+}
+
+
+.hovereffect {
+    width: 500px;
+    height: 332px;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    border: 3px solid beige;
+
+
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(178, 36, 0, 0.5);
+    transition: all .10s ease-in-out;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    height: 500px;
+    transition: all .600s ease-in-out;
+
+}
+
+.hovereffect h1 {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+
+    transition: all .10s ease-in-out;
+    transition-delay: 10s;
+    padding: 10px;
+}
+
+.hovereffect p.info {
+    text-decoration: none;
+    display: inline-block;
+
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    opacity: 0;
+    margin: 50px 100px;
+    padding: 10px;
+}
+
+
+span.fox1 {
+    animation: color 5s linear infinite;
+    animation-duration: 3400ms;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes color {
+    0% {
+        color: rgb(255, 255, 255);
+
+    }
+
+    40% {
+        color: rgb(255, 255, 255);
+
+    }
+
+    60% {
+        color: red;
+        font-size: 22px;
+    }
+
+    100% {
+        color: red;
+        font-size: 25px;
+
+    }
+}
+
+
+span.fox2 {
+    animation: color2 5s linear infinite;
+    animation-duration: 3400ms;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes color2 {
+    0% {
+        color: rgb(255, 255, 255);
+        font-size:
+    }
+
+    40% {
+        color: rgb(255, 255, 255);
+        font-size:
+    }
+
+    60% {
+        color: rgb(38, 38, 38);
+        font-size: 20px;
+    }
+
+    100% {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.hovereffect:hover img {
+
+    transform: scale(1.6);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+
+}
+
+.hovereffect:hover h1,
+.hovereffect:hover p.info {
+    opacity: 1;
+    transform: scale(170%);
+
+    transition-duration: 3400ms;
+
+}
+
+
+
+#gallery {
+    position: relative;
+    height: 281px;
+    width: 450px;
+    margin: 0px 100px 100px 600px;
+}
+
+#gallery img {
+    position: absolute;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    border: 2px solid white;
+
+}
+
+
+
+
+@keyframes FadeInOut {
+    0% {
+        opacity: 1;
+        scale: 100%;
+    }
+
+    30% {
+        opacity: 1;
+
+
+    }
+
+    80% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+        scale: 10%;
+
+    }
+}
+
+#gallery img.top {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
 }
