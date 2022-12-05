@@ -1,0 +1,233 @@
+@font-face {
+    font-family: signup;
+    src: url(PrettyGoodDemo-K72jD.ttf);
+}
+
+@font-face {
+    font-family: form;
+    src: url(RocketchickenRegular-qZ6EV.otf);
+}
+
+
+@font-face {
+    font-family: wat;
+    src: url(WinterPrincess-EaZv4.ttf);
+}
+
+
+
+
+
+
+
+
+body {
+
+    background-image: url(4659165.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+.label1 {
+
+    margin: 10px 10px;
+    padding: 4%;
+
+
+
+}
+
+.label2 {
+    padding: 4%;
+    margin: 50px 10px;
+
+}
+
+.email {
+    margin: 10px 3px 20px 30px;
+
+
+}
+
+img {
+    margin: 10px 500px;
+    border: 2px solid black;
+    height: 150px;
+}
+
+header {
+    margin: 50px 500px;
+    font-family: wat;
+
+
+}
+
+select {
+    margin: 20px 200px 20px 195px;
+
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+
+
+
+
+
+
+}
+
+#agree {
+
+    margin: 30px 200px 50px 145px;
+
+
+}
+
+fieldset {
+    background-color: #eeeeee6d;
+    height: 270px;
+    width: 600px;
+    margin: 35px 100px 8px 450px;
+    padding-bottom: 45%;
+
+}
+
+legend {
+    background-color: rgba(0, 132, 139, 0.552);
+    color: white;
+    padding: 10px 50px;
+    font-size: larger;
+    margin: 10px 10px 10px 10px;
+    font-family: signup;
+    border: solid 2px black;
+
+}
+
+
+#email {
+    width: 360px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#lname {
+
+
+    width: 190px;
+    height: 30px;
+    margin: 20px 20px 40px 80px;
+
+
+
+}
+
+#fname {
+    width: 190px;
+    height: 30px;
+    margin: 20px 20px 20px 80px;
+
+
+
+}
+
+input {
+
+    width: 190px;
+
+    height: 30px;
+    background-color: rgb(147, 207, 190);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3%;
+
+
+
+
+
+}
+
+.mailad {
+    padding: 140px 150px 20px 30px;
+}
+
+Input[type=text]:focus {
+    background-color: #ffffff;
+    opacity: 90%;
+}
+
+
+Input[type=email]:focus {
+    background-color: #ffffff;
+    opacity: 90%;
+}
+
+
+
+input[type=email] {
+
+    width: 490px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-top: 2%;
+    margin-right: 10px;
+    margin-left: 20px;
+
+
+}
+
+
+form {
+    display: table-row-group;
+    table-layout: auto;
+    height: 100%;
+    font-family: form;
+
+
+}
+
+
+textarea {
+    margin: 50px 10px 20px 80px;
+    width: 490;
+    resize: none;
+    overflow: hidden;
+    text-align: left;
+
+
+
+}
+
+.btn {
+
+    margin: -600px 200px -400px 170px;
+
+
+}
+
+input[type=submit]:focus {
+
+    background-color: white;
+    cursor: pointer;
+    scale: 90%;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+option:hover {
+    cursor: pointer;
+
+}
+
+
+option:active {
+    cursor: pointer;
+    scale: 90%;
+
+
+}

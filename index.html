@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form task</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+   
+  </head>
+
+  <body>
+    <img id="pic" src="Banner_Colorful_Hair.png" alt="colorbanner" />
+    <header>
+      <h1>Join the coloful community and subscribe to weekly news from us!</h1>
+    </header>
+    <div class="container">
+      <form>
+        <fieldset>
+          <legend>Sign up for the newsletter</legend>
+          <label for="fname" class="label1">First name</label>
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="first name"
+            required
+          /><br />
+
+          <br /><label for="lname" class="label2">Last name</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="last name"
+            required
+          />
+
+          <br /><label for="email" class="mailad">E-mail</label>
+          <input type="email" id="email" name="email" required /> <br>
+
+<br>
+          <label for="agreement" id="agree">What do you want to hear more about? </label><br>
+          <select id="agreement" name="agreement" size="4" required>
+            <option value="choose" disabled selected>--Subscribtion options--</option>
+            <option value="1">New colors</option>
+            <option value="1">discounts</option>
+            <option value="1">Community news</option>
+            <option value="1" checked>All above</option>
+
+
+          <textarea
+            wrap="off"
+            maxlength="200"
+            name="message"
+            rows="7"
+            cols="48"
+            placeholder="send us a question"
+          >
+          </textarea>
+
+          <input type="submit" value="Submit" class="btn" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
