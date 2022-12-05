@@ -28,118 +28,156 @@ body {
     background-size: cover;
     background-attachment: fixed;
 
-}
-
-
-
-.label1 {
-
-    margin: 10px 10px;
-    padding: 4%;
-
-
 
 }
 
-.label2 {
-    padding: 4%;
-    margin: 50px 10px;
 
-}
 
-.email {
-    margin: 10px 3px 20px 30px;
-
+.label1,
+.label2,
+.mailad {
+    font-weight: 600;
+    margin: 0 auto;
+    font-family: Poppins;
 
 }
 
 img {
-    margin: 10px 500px;
-    border: 2px solid black;
+    margin: auto;
+    opacity: 70%;
+    border-radius: 20px;
     height: 150px;
 }
 
 header {
-    margin: 50px 500px;
-    font-family: wat;
+    background-color: #ffffff8b;
+    border-radius: 30px;
+    border: 10px double black;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Poppins;
+    text-align: center;
+    width: 70%;
+
+    font-size: 10px;
+    letter-spacing: 4px;
+
 
 
 }
 
+#main_title {
+    color: rgb(0, 153, 174);
+    text-shadow: 0 0 1px black;
+    text-align: center;
+    font-weight: 600;
+    margin: 30px 50px;
+    animation: slide-top 4s linear;
+
+}
+
+
+@keyframes slide-top {
+    0% {
+
+        transform: translateY(50px);
+    }
+
+    100% {
+
+        scale: 120%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        scale: 80%;
+        color: rgb(212, 0, 255);
+        transform: translateY(50px);
+    }
+
+    50% {
+        color: red;
+    }
+
+    80% {
+        color: rgb(179, 210, 0);
+    }
+
+    100% {
+        scale: 100%;
+        color: rgb(0, 153, 174);
+        text-shadow: 0 0 1px black;
+        transform: translateY(0px);
+    }
+}
+
 select {
-    margin: 20px 200px 20px 195px;
+    margin: 0 auto;
+    width: 370px;
+    max-height: 100px;
+    font-family: Poppins;
+    align-items: center;
 
     background-color: transparent;
     resize: none;
     overflow: hidden;
 
-
-
-
-
-
 }
+
+
 
 #agree {
 
-    margin: 30px 200px 50px 145px;
+    margin: 0 auto;
 
 
 }
 
 fieldset {
-    background-color: #eeeeee6d;
-    height: 270px;
-    width: 600px;
-    margin: 35px 100px 8px 450px;
-    padding-bottom: 45%;
+    background-color: #eeeeee7c;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    justify-content: center;
 
 }
 
 legend {
+
     background-color: rgba(0, 132, 139, 0.552);
     color: white;
-    padding: 10px 50px;
+    padding: 10px 30px;
+    border-radius: 20px;
     font-size: larger;
-    margin: 10px 10px 10px 10px;
+    margin: 10px auto;
     font-family: signup;
     border: solid 2px black;
 
 }
 
 
+
+#lname,
+#fname,
 #email {
-    width: 360px;
-    height: 30px;
-    margin-left: 80px;
-    margin-top: 10px;
-}
-
-#lname {
-
-
-    width: 190px;
-    height: 30px;
-    margin: 20px 20px 40px 80px;
 
 
 
-}
-
-#fname {
-    width: 190px;
-    height: 30px;
-    margin: 20px 20px 20px 80px;
-
-
+    margin: 0 auto;
 
 }
 
 input {
 
-    width: 190px;
 
-    height: 30px;
+    margin: 0 auto;
+
     background-color: rgb(147, 207, 190);
     border: 2px solid rgb(0, 0, 0);
     border-radius: 3%;
@@ -148,10 +186,13 @@ input {
 
 
 
+
 }
 
 .mailad {
-    padding: 140px 150px 20px 30px;
+
+    padding: 10px;
+
 }
 
 Input[type=text]:focus {
@@ -172,9 +213,7 @@ input[type=email] {
     width: 490px;
     height: 40px;
     border: 2px solid rgb(0, 0, 0);
-    margin-top: 2%;
-    margin-right: 10px;
-    margin-left: 20px;
+    margin: 10px auto;
 
 
 }
@@ -183,7 +222,9 @@ input[type=email] {
 form {
     display: table-row-group;
     table-layout: auto;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: form;
 
 
@@ -191,8 +232,8 @@ form {
 
 
 textarea {
-    margin: 50px 10px 20px 80px;
-    width: 490;
+    margin: 20px auto;
+
     resize: none;
     overflow: hidden;
     text-align: left;
@@ -203,14 +244,14 @@ textarea {
 
 .btn {
 
-    margin: -600px 200px -400px 170px;
+    margin: 0 auto;
 
 
 }
 
 input[type=submit]:focus {
 
-    background-color: white;
+
     cursor: pointer;
     scale: 90%;
 }
@@ -219,15 +260,24 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
-option:hover {
-    cursor: pointer;
 
+
+
+
+select option:hover,
+select option:focus,
+select option:active {
+    background: linear-gradient(rgb(147, 207, 190), #e7ffe9);
+    background-color: #000000a4 !important;
+    /* for IE */
+    color: #000000 !important;
+    cursor: pointer;
+    scale: 95%;
 }
 
-
-option:active {
-    cursor: pointer;
-    scale: 90%;
-
-
+select option:checked {
+    background: linear-gradient(rgb(147, 207, 190), #e7ffe9);
+    background-color: #a5ff7ea4 !important;
+    /* for IE */
+    color: #000000 !important;
 }
